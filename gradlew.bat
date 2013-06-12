@@ -1,4 +1,4 @@
-@set GRADLE_USER_HOME=F:\Cours LP - DASI\JEE\TP Geektic\Geektic
+@set GRADLE_USER_HOME=F:\Cours LP - DASI\gradle
 @if "%GRADLE_USER_HOME%" == "" @echo Tu dois definir la variable d'environnement GRADLE_USER_HOME dans le fichier gradlew.bat (qui doit contenir le chemin absolu d'un repertoire sur ton disque dur externe).&goto omega
 
 @if "%DEBUG%" == "" @echo off
