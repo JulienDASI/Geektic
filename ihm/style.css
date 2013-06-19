@@ -1,0 +1,125 @@
+#container{width:1000px; margin:0 auto;}
+#topbar{width:auto; display:block; height:80px;}
+#navbar{width:auto; display:block; height:50px;}
+#footer{width:auto; display:block; height:24px;}
+
+div.carre
+{
+margin-top:5%;
+margin-right:30%;
+margin-left:28.5%;
+margin-bottom:1%;
+display:block;
+height:480px;
+width:420px;
+border:5px solid blue;
+background-color:#5BB9D5;
+text-align : center;
+}
+
+div.recherche
+{
+float:center;
+}
+
+div.gauche
+{
+text-align:left;
+}
+
+div.centre
+{
+text-align:center;
+}
+
+div.droite
+{
+text-align:right;
+}
+
+div.g
+{
+margin-top:10%;
+margin-left:8%;
+height:100px;
+float:left;
+}
+
+div.d
+{
+margin-top:3%;
+margin-right:6%;
+height:5px;
+float:right;
+}
+
+div.b
+{
+margin-top:45%;
+height:5px;
+float:center;
+}
+
+.coeur {
+background:url(coeur.png);
+background-color:grey;
+border:3px solid Black;
+height:130px;
+width:130px;
+cursor: pointer;
+border-style:outset;
+}
+
+body
+{
+background:url(geek.jpeg) no-repeat center center;
+background-position:absolute;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+h1
+{
+color : #00B9F2;
+text-align : center;
+font-size : 45px;
+text-shadow: 0px 1px 1px #FEFEFE;
+font-family : Comic Sans MS;
+margin-bottom : 45px;
+}
+
+h2
+{
+color : #00B9F2;
+text-align : center;
+font-size : 20px;
+text-shadow: 0px 1px 1px #FEFEFE;
+font-family : Comic Sans MS;
+}
+
+h3
+{
+color : #9B0606;
+font-size : 15px;
+text-shadow: 0px 0px 1px #FEFEFE;
+font-family : Comic Sans MS;
+}
+
+h4
+{
+color : #9B0606;
+font-size : 20px;
+text-shadow: 0px 0px 1px #FEFEFE;
+font-family : Comic Sans MS;
+text-align : center;
+}
+
+h5
+{
+color : #9B0606;
+font-size : 17px;
+text-shadow: 0px 0px 1px #FEFEFE;
+font-family : Comic Sans MS;
+text-align : center;
+}
+

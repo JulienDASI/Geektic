@@ -1,5 +1,8 @@
 package com.iut.julien;
 
+import java.util.Properties;
+
+import javax.sql.DataSource;
 
 import org.hibernate.ejb.HibernatePersistence;
 import org.springframework.context.MessageSource;
@@ -24,7 +27,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
-
+/**
+* Spring webapp configuration
+* @author hj
+*/
 @Configuration
 @ComponentScan("com.iut.julien")
 @EnableWebMvc
@@ -34,7 +40,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     public ViewResolver viewResolver() {
         UrlBasedViewResolver resolver = new UrlBasedViewResolver();
         resolver.setSuffix(".jsp");
-        resolver.setPrefix("/WEB-INF/views");
+        resolver.setPrefix("/WEB-INF/views/");
         resolver.setViewClass(JstlView.class);
         return resolver;
     }
@@ -76,8 +82,12 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     }
 
     @Bean
-    public DriverManagerDataSource dataSource() {
-        DriverManagerDataSource result = new DriverManagerDataSource("jdbc:hsqldb:hsql://localhost/GEEKTIC", "sa", "");
+    public DataSource dataSource() {
+        DriverManagerDataSource result = new DriverManagerDataSource("jdbc:hsqldb:hsql://localhost/Geektic", "sa", "");
+        Properties properties = result.getConnectionProperties();
+        if(properties==null) properties = new Properties();
+        properties.put("hibernate.dialect", "net.sf.hibernate.dialect.HSQLDialect");
+        result.setConnectionProperties(properties);
         result.setDriverClassName(org.hsqldb.jdbc.JDBCDriver.class.getName());
         return result;
     }
@@ -100,6 +110,5 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         result.setEntityManagerFactory(emf().getObject());
         return result;
     }
-
 }
 
