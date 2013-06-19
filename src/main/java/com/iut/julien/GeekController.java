@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/geektic")
+@RequestMapping("/")
 public class GeekController {
 	@Autowired
 	GeekService geekSrv;
 	
-	@RequestMapping(value="/geek", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public String accueil(ModelMap model) {
 		return "index";
 	}
