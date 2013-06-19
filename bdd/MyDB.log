@@ -11,3 +11,4 @@ INSERT INTO GEEK VALUES(3,'joly','florent','bbb@hotmail.com','cinema','homme')
 COMMIT
 INSERT INTO GEEK VALUES(4,'clery','justine','ccc@hotmail.com','jeux video','femme')
 COMMIT
+DISCONNECT
