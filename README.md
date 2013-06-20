@@ -1,6 +1,11 @@
 Geektic
 =======
 
-TP Geektic / JEE / Tests
+Geektic / JEE / Tests etc...
 
-De gros probl�mes de TOMCAT, donc un dossier ihm avec le site dedans en html.
+A la racine du projet les 2 scripts pour créer la tabble et la remplir.
+
+Un dossier BDD, qui contient la base de donnée etc...
+
+Un dossier IHM, qui contient l'ensemble du site en html et jsp...
+
